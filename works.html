@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" id="top">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Works | Sherin Glady</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+
+<body class="works-page">
+
+  <!-- Header -->
+  <header class="site-header">
+    <a class="brand" href="index.html#top">Sherin Glady</a>
+    <nav class="nav">
+     <a href="index.html" class="pill">Home</a>
+     <a href="works.html" class="pill active">Works</a>
+     <a href="aboutme.html" class="pill">About Me</a>
+     <a href="contact.html" class="pill">Contact</a>
+    </nav>
+  </header>
+
+  <main class="works-wrap">
+    <!-- Top banner -->
+    <img src="images/corner.png" alt="Welcome to my Little Corner" class="corner-title">
+
+    <!-- Cards row -->
+    <div class="works-hero works-content">
+    </div>
+    <div class="works-tools">
+      <input id="works-search" class="works-search" type="search" placeholder="Search works" aria-label="Search Works">
+      <div class="works-filters" role="group" aria-label="Filter Works">
+      <button class="filter-btn is-active" data-filter="all" type="button">All</button>
+      <button class="filter-btn" data-filter="branding" type="button">Branding</button>
+      <button class="filter-btn" data-filter="social" type="button">Social</button>
+      <button class="filter-btn" data-filter="playground" type="button">Playground</button>
+      </div>
+    
+    <select id="works-sort" class="works-sort">
+      <option value="default">Sort</option>
+      <option value="az">A-Z</option>
+      <option value="za">Z-A</option>
+    </select>
+    </div>
+
+    <div id="works-container" class="works-cards" aria-live="polite"></div>
+
+    <!-- Lady on the right -->
+<img src="images/lady1.png" alt="lady" class="lady-illustration">
+
+    <!-- Bottom banner -->
+    <div class="creativity-block">
+      <img src="images/creativity.png" alt="of Creativity!">
+    </div>
+</main>
+  <!-- Footer -->
+   <footer class="footer">
+    <small>copyright.2025 S.G</small>
+  </footer>
+  
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="modal-close">&times;</span>
+      <img id="modal-img" src="" alt="">
+      <h2 id="modal-title"></h2>
+      <a id="modal-link" href="#" class="modal-btn">View Project</a>
+      </div>
+  </div>
+      <script src="works.js"></script>
+
+</body>
+</html>
