@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Sherin Glady</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body class="contact-page">
+
+ <!-- Header -->
+  <header class="site-header">
+    <a class="brand" href="index.html#top">Sherin Glady</a>
+    <nav class="nav">
+      <a href="index.html" class="pill">Home</a>
+      <a href="works.html" class="pill">Works</a>
+      <a href="aboutme.html" class="pill">About Me</a>
+      <a href="contact.html" class="pill active">Contact</a>
+    </nav>
+  </header>
+
+  <main class="contact-content">
+    <section class="warning-text">
+      <h1>Knock Knock!</h1>
+      <h2>You're just a click away from saying hi :)</h2>
+    </section>
+
+    <section class="contact-form-section" aria-labelledby="contact-form-title">
+    
+      <form id="contact-form" class="contact-form" novalidate>
+        <div class="contact-row">
+          <div class="field">
+            <label for="name">Name *</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+
+          <div class="field">
+            <label for="email">Email *</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" />
+        </div>
+
+        <div class="field">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="contact-submit">Send</button>
+
+        <p id="form-status" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/sherin-glady" target="_blank" rel="noopener">
+          <img src="images/linkicon.png" alt="LinkedIn">
+        </a>
+        <a href="https://www.instagram.com/shescribbles.sg" target="_blank" rel="noopener">
+          <img src="images/instaicon.png" alt="Instagram">
+        </a>
+      </div>
+
+  </main>
+    <!-- Footer -->
+  <footer class="footer">
+    <small>copyright.2025 S.G</small>
+  </footer>
+
+  <!-- EmailJs-->
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
